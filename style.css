@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 14px;
+}
+body{
+    font-family: "Tilt Warp", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: hsl(30, 38%, 92%);
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25rem;
+    
+}
+img{
+    height: 31rem;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+
+}
+.main{
+    background-color: white;
+    border-radius: 0.7rem;
+    max-width: 39rem;
+}
+.container{
+    display: flex;
+}
+.intro{
+    padding: 2rem;
+}
+.intro > p {
+    letter-spacing: 0.2rem;
+    color: grey;
+    
+}
+.intro h1{
+    line-height: 2rem;
+    margin-top: 2rem;
+    font-weight: 200;
+}
+.description > p{
+    font-size: 12px;
+    margin: 2rem 0;
+    text-align: start;
+    line-height: 1.3rem;
+}
+.price{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.price p{
+    font-size: 34px;
+    color: green;
+}
+
+.price span{
+    font-size: 20px;
+    margin-top: -1.5rem;
+    margin-left: -1.5rem;
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+.cart{
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.8rem;
+    gap: 1rem;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    transition: 0.3s;
+}
+.cart:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.cart p{
+    font-size: 16px;
+    font-weight: 100;
+}
+.cart i{
+    font-size: 17px;
+}
+
+/* Responsive */
+@media  screen and (max-width:400px) {
+    body{
+        position: relative;
+        right: 200px;
+    }
+    img{
+        height: 18rem;
+        border-top-left-radius: 0.7rem;
+        border-bottom-left-radius: 0.7rem;
+    
+    }
+    .main{
+        background-color: white;
+        border-radius: 0.7rem;
+        max-width: 28rem;
+    }
+    .container{
+        display: flex;
+    }
+    .intro{
+        padding: 1rem;
+    }
+    .intro > p {
+        letter-spacing: 0.1rem;
+        color: grey;
+        
+    }
+    .intro h1{
+        line-height: 2rem;
+        margin-top: 1rem;
+        font-weight: 200;
+    }
+    .description > p{
+        font-size: 9px;
+        margin: 1rem 0;
+        text-align: start;
+        line-height: 1rem;
+    }
+    .price{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .price p{
+        font-size: 20px;
+        color: green;
+    }
+    
+    .price span{
+        font-size: 15px;
+        margin-top: -1.rem;
+        margin-left: -1.1rem;
+        text-decoration: line-through;
+        text-decoration-color: red;
+    }
+    .cart{
+        position: relative;
+        right: 100px;
+        color: white;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        justify-content: center;
+        margin-top: 1.3rem;
+        gap: 1rem;
+        background-color: green;
+        padding: 15px 20px;
+        border-radius: 0.3rem;
+        transition: 0.3s;
+    }
+    .cart:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    .cart p{
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .cart i{
+        font-size: 12px;
+    }
+}
